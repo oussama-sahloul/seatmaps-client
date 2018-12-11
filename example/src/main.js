@@ -1,5 +1,5 @@
 import '@babel/polyfill'
-import Tevomaps from '../lib/index'
+import Tevomaps from '../../lib/index'
 
 window.addEventListener('load', function () {
   new Tevomaps({

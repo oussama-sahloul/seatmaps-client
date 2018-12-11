@@ -6,7 +6,7 @@ export const absolute = (...p) => path.join(__dirname, ...p)
 
 export default {
     entry: {
-        example: absolute('main.js')
+        example: absolute('src', 'main.js')
     },
     output: {
         path: absolute('dist'),
@@ -15,7 +15,7 @@ export default {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Sitemaps Example',
-            template: absolute('index.html')
+            template: absolute('src', 'index.html')
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contentHash].css'
